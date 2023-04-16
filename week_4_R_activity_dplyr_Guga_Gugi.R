@@ -73,8 +73,8 @@ female_df <- filter(titanic_df_renamed, Gender == "Female")
 #And now let's join the males and females
 #TASK: Write the function that joins the male and female rows 
 #(hint: try using 'union' or 'bind_rows')
-union(male_df, female_df)
-
+union(male_df, female_df)   #here union is only unionizing the unique rows... i think bind rows is better here...
+checkifmerged <- bind_rows(male_df, female_df)
 
 #Optional Task: add any of the other functions 
 #you learned about from the dplyr package
